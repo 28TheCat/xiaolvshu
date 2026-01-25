@@ -3,25 +3,24 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.yating</groupId>
-        <artifactId>xiaolvshu</artifactId>
+        <artifactId>yating-framework</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <!-- 多模块项目需要配置打包方式为 pom -->
-    <packaging>pom</packaging>
-
-    <artifactId>yating-framework</artifactId>
-
+    <artifactId>yating-common</artifactId>
+    <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>平台基础设施层：封装一些常用功能，供各个业务线拿来即用</description>
+    <description>平台通用模块，如一些通用枚举、工具类等等</description>
 
-    <modules>
-        <!-- 通用工具模块 -->
-        <module>yating-common</module>
-    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 </project>
