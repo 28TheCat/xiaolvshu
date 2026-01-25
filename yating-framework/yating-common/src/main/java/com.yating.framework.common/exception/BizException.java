@@ -1,4 +1,4 @@
-﻿package com.yating.framework.common.exception;
+package com.yating.framework.common.exception;
 
 import lombok.Getter;
 import lombok.Setter;

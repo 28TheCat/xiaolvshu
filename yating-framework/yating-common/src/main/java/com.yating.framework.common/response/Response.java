@@ -1,4 +1,4 @@
-﻿package com.yating.framework.common.response;
+package com.yating.framework.common.response;
 
 import com.yating.framework.common.exception.BaseExceptionInterface;
 import com.yating.framework.common.exception.BizException;

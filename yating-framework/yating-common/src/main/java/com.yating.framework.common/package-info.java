@@ -1,1 +1,1 @@
-﻿package com.yating.framework.common;
+package com.yating.framework.common;
