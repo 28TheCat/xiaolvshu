@@ -18,10 +18,13 @@
     <modules>
         <!-- 通用工具模块 -->
         <module>yating-common</module>
+        <!-- 接口日志组件 -->
+        <module>yating-spring-boot-starter-biz-operationlog</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
     </properties>
 
 </project>
