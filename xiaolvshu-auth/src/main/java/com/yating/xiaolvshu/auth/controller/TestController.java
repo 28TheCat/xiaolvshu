@@ -1,4 +1,4 @@
-package com.yating.xiaolvshuauth.controller;
+package com.yating.xiaolvshu.auth.controller;
 
 import com.yating.framework.biz.operationlog.aspect.ApiOperationLog;
 import com.yating.framework.common.response.Response;

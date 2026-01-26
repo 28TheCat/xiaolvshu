@@ -1,4 +1,4 @@
-package com.yating.xiaolvshuauth.controller;
+package com.yating.xiaolvshu.auth.domain.dataobject;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,14 +11,12 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class User {
-    /**
-     * 昵称
-     */
-    private String nickName;
+public class UserDO {
+    private Long id;
 
-    /**
-     * 创建时间
-     */
+    private String username;
+
     private LocalDateTime createTime;
+
+    private LocalDateTime updateTime;
 }

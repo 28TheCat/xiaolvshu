@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yating.xiaolvshu.auth.domain.mapper.UserDOMapper">
+    <resultMap id="BaseResultMap" type="com.yating.xiaolvshu.auth.domain.dataobject.UserDO">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="username" jdbcType="VARCHAR" property="username" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    </resultMap>
+
+    <select id="selectByPrimaryKey" parameterType="long" resultMap="BaseResultMap">
+        select * from t_user where id=#{id}
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="long">
+        delete from t_user where id=#{id}
+    </delete>
+
+    <insert id="insert" parameterType="com.yating.xiaolvshu.auth.domain.dataobject.UserDO">
+        insert into t_user ( username, create_time, update_time)
+        values ( #{username}, #{createTime}, #{updateTime})
+    </insert>
+
+    <update id="updateByPrimaryKey" parameterType="com.yating.xiaolvshu.auth.domain.dataobject.UserDO">
+        update t_user
+        <set>
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            where id = #{id}
+        </set>
+    </update>
+
+</mapper>

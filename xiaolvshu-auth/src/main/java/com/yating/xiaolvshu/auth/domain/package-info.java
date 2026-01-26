@@ -1,0 +1,1 @@
+package com.yating.xiaolvshu.auth.domain;
