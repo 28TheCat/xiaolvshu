@@ -38,7 +38,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     <jackson.version>2.16.1</jackson.version>
+    <mysql-connector-java.version>8.0.29</mysql-connector-java.version>
   </properties>
+
 
   <!-- 统一依赖版本管理 -->
   <dependencyManagement>
@@ -72,6 +74,20 @@
         <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <!-- Mybatis -->
+      <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+
+      <!-- MySQL 驱动 -->
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql-connector-java.version}</version>
       </dependency>
 
       <!-- Spring Cloud Alibaba BOM -->
