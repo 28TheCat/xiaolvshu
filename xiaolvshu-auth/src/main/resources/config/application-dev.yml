@@ -5,3 +5,8 @@ spring:
     url: jdbc:mysql://127.0.0.1:13306/xiaolvshu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root # 数据库用户名
     password: Ww@123456 # 数据库密码
+
+
+logging:
+  level:
+    com.quanxiaoha.xiaohashu.auth.domain.mapper: debug

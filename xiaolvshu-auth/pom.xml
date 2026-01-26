@@ -23,9 +23,9 @@
 
         <!-- 业务接口日志组件 -->
         <dependency>
-            <groupId>com.yating</groupId>
+            <groupId>com.yating.framework.biz.operationlog</groupId>
             <artifactId>yating-spring-boot-starter-biz-operationlog</artifactId>
-            <version>${revision}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <!-- Mybatis -->
@@ -50,10 +50,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.yating.framework.biz.operationlog</groupId>
-            <artifactId>yating-spring-boot-starter-biz-operationlog</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>

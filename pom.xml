@@ -29,7 +29,7 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
     <!-- Spring 版本 -->
-    <spring-boot.version>3.2.1</spring-boot.version>
+    <spring-boot.version>3.0.4</spring-boot.version>
     <spring-cloud.version>2023.0.0</spring-cloud.version>
     <spring-cloud-alibaba.version>2023.0.1.0</spring-cloud-alibaba.version>
 
@@ -48,9 +48,9 @@
 
       <!-- 业务接口日志组件 -->
       <dependency>
-        <groupId>com.yating</groupId>
+        <groupId>com.yating.framework.biz.operationlog</groupId>
         <artifactId>yating-spring-boot-starter-biz-operationlog</artifactId>
-        <version>${revision}</version>
+        <version>0.0.1-SNAPSHOT</version>
       </dependency>
 
       <dependency>
