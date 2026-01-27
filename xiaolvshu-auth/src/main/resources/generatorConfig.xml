@@ -22,7 +22,7 @@
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:13306/xiaolvshu"
                         userId="root"
-                        password="Ww@122345678">
+                        password="Ww@12345678">
             <!-- 解决多个重名的表生成表结构不一致问题 -->
             <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
