@@ -6,10 +6,13 @@ import com.yating.xiaolvshu.auth.enums.ResponseCodeEnum;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.support.MetaDataAccessException;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.Optional;
 
 /**
  * @Author: yating
@@ -17,8 +20,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @Version: v1.0.0
  * @Description: TODO
  **/
-import java.util.Optional;
-
 @ControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
@@ -83,4 +84,3 @@ public class GlobalExceptionHandler {
         return Response.fail(ResponseCodeEnum.SYSTEM_ERROR);
     }
 }
-

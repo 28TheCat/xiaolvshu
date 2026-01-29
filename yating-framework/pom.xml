@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -7,24 +8,53 @@
         <version>${revision}</version>
     </parent>
 
-    <!-- 多模块项目需要配置打包方式为 pom -->
+    <!-- 多模块父工程必须配置为pom打包方式，子模块继承此POM -->
     <packaging>pom</packaging>
 
     <artifactId>yating-framework</artifactId>
-
     <name>${project.artifactId}</name>
     <description>平台基础设施层：封装一些常用功能，供各个业务线拿来即用</description>
 
+    <!-- 子模块声明：所有基础设施层子模块在此注册 -->
     <modules>
-        <!-- 通用工具模块 -->
+        <!-- 通用工具模块：提供基础工具类、通用常量等 -->
         <module>yating-common</module>
-        <!-- 接口日志组件 -->
+        <!-- 接口日志组件：SpringBoot Starter，快速集成业务操作日志 -->
         <module>yating-spring-boot-starter-biz-operationlog</module>
     </modules>
 
+    <!-- 基础属性定义：编码、Java版本、自定义变量等 -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- 入参校验 -->
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- Java编译版本，根据项目实际情况调整（如11、17） -->
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <!-- 统一管理校验组件版本，便于后续升级 -->
+        <jakarta.validation.version>3.0.2</jakarta.validation.version>
+        <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
+    </properties>
+
+    <!-- 依赖版本管理：子模块可直接引入，无需指定版本，保证多模块版本一致 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Jakarta 校验规范核心API -->
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta.validation.version}</version>
+            </dependency>
+            <!-- Hibernate Validator：Jakarta校验规范的官方实现 -->
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate.validator.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 若当前父工程需要直接使用这些依赖，可添加<dependencies>标签（子模块无需重复添加）
+    <dependencies>
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
@@ -33,7 +63,6 @@
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
         </dependency>
-
-    </properties>
-
+    </dependencies>
+    -->
 </project>
