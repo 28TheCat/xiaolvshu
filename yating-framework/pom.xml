@@ -20,5 +20,6 @@
         <module>yating-common</module>
         <!-- 接口日志组件 -->
         <module>yating-spring-boot-starter-biz-operationlog</module>
+        <module>yating-spring-boot-starter-jackson</module>
     </modules>
 </project>

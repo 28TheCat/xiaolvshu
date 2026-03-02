@@ -8,7 +8,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @SpringBootTest
 @Slf4j
@@ -23,10 +25,11 @@ class XiaolvshuAuthApplicationTests {
 
     @Test
     void testInsert(){
+
         UserDO userDO = new UserDO();
-        userDO.setUsername("dsdf");
-        userDO.setCreateTime(LocalDateTime.now());
-        userDO.setUpdateTime(LocalDateTime.now());
+        userDO.setNickname("fdsfffds");
+        userDO.setCreateTime(new Date());
+        userDO.setUpdateTime(new Date());
 
         userDOMapper.insert(userDO);
     }

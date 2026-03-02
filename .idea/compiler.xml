@@ -15,9 +15,10 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
+        <module name="yating-spring-boot-starter-biz-operationlog" />
+        <module name="yating-spring-boot-starter-jackson" />
         <module name="xiaolvshu-auth" />
         <module name="yating-common" />
-        <module name="yating-spring-boot-starter-biz-operationlog" />
       </profile>
     </annotationProcessing>
   </component>
