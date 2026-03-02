@@ -38,10 +38,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.yating.framework.biz.operationlog</groupId>
+            <groupId>com.yating</groupId>
             <artifactId>yating-spring-boot-starter-biz-operationlog</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 

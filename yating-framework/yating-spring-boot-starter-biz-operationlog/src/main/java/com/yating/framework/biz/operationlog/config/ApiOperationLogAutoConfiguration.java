@@ -15,6 +15,7 @@ public class ApiOperationLogAutoConfiguration {
 
     @Bean
     public ApiOperationLogAspect apiOperationLogAspect(){
+
         return new ApiOperationLogAspect();
     }
 }

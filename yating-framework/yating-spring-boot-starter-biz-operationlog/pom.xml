@@ -10,7 +10,6 @@
     <!-- 指定打包方式 -->
     <packaging>jar</packaging>
 
-    <groupId>com.yating.framework.biz.operationlog</groupId>
     <artifactId>yating-spring-boot-starter-biz-operationlog</artifactId>
     <name>${project.artifactId}</name>
     <description>接口日志组件</description>
