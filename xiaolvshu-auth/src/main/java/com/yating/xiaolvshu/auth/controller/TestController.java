@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("/test")
+    @ApiOperationLog(description = "测试接口")
     public Response<String> test() {
         return Response.success("测试成功，success");
     }
