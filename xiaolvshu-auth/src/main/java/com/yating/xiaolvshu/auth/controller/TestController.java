@@ -15,18 +15,18 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class TestController {
 
-    @GetMapping("/test")
-    @ApiOperationLog(description = "测试接口")
-    public Response<String> test() {
-        return Response.success("Hello, 犬小哈专栏");
-    }
-
-    @PostMapping("/test2")
-    @ApiOperationLog(description = "测试接口2")
-    public Response<User> test2(@RequestBody @Validated User user) {
-        int i = 1 / 0;
-        return Response.success(user);
-    }
+//    @GetMapping("/test")
+//    @ApiOperationLog(description = "测试接口")
+//    public Response<String> test() {
+//        return Response.success("Hello");
+//    }
+//
+//    @PostMapping("/test2")
+//    @ApiOperationLog(description = "测试接口2")
+//    public Response<User> test2(@RequestBody @Validated User user) {
+//        int i = 1 / 0;
+//        return Response.success(user);
+//    }
 
     // 测试登录，浏览器访问： http://localhost:8080/user/doLogin?username=zhang&password=123456
     @RequestMapping("/user/doLogin")
