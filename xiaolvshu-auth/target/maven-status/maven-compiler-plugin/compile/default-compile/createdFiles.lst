@@ -1,0 +1,10 @@
+com\yating\xiaolvshu\auth\XiaolvshuAuthApplication.class
+com\yating\xiaolvshu\auth\domain\dataobject\UserDO$UserDOBuilder.class
+com\yating\xiaolvshu\auth\domain\dataobject\UserDO.class
+com\yating\xiaolvshu\auth\controller\User.class
+com\yating\xiaolvshu\auth\enums\ResponseCodeEnum.class
+com\yating\xiaolvshu\auth\exception\GlobalExceptionHandler.class
+com\yating\xiaolvshu\auth\controller\User$UserBuilder.class
+com\yating\xiaolvshu\auth\domain\mapper\UserDOMapper.class
+com\yating\xiaolvshu\auth\config\JacksonConfig.class
+com\yating\xiaolvshu\auth\controller\TestController.class

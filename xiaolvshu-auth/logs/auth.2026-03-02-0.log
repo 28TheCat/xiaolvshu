@@ -1,0 +1,108 @@
+2026-03-02 22:05:09.128 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Starting DruidTests using Java 17.0.18 with PID 22256 (started by 26076 in D:\GitHub\xiaolvshu\xiaolvshu-auth)
+2026-03-02 22:05:09.129 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - The following 1 profile is active: "dev"
+2026-03-02 22:05:10.802 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-03-02 22:05:11.278 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2026-03-02 22:05:11.670 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Started DruidTests in 3.067 seconds (process running for 4.098)
+2026-03-02 22:05:12.318 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - privateKey:MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAudhvbfpGsMhK+ihqdTXhCqKfGan4vXRIf/H0/BEGCfxz+d7WFqy5i325nQUm/h8tvjxOQ7v1XmZ0ErVSnvGo2QIDAQABAkBTpUeZ71CL1spwR2qK8MImIEWNroPm+YR8GbHTFfJq4XEUuoRUQPo0BX764tci9SG1CiurSwaLWRtlm6cXYVGVAiEA8UdPpT0nBBqXnBivPURK6VkzV557KzMcR6C4CQojctcCIQDFL0cjddEooG+AX9e0eWdb9M0bo7GL9uyyKasKY+n7zwIhAME848TrXTwkMBiMjIz9DSImlsAt5WeL37JePga/X/SxAiA9SERDsQogJjyBGUhgvppw6dQVEvrLFSLa/Dg8MnE14QIgKLcTCCPbNr2Hz530+yiu+BQMCbC0LLr3dgHRJ4oaJOI=
+2026-03-02 22:05:12.321 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - publicKey:MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALnYb236RrDISvooanU14Qqinxmp+L10SH/x9PwRBgn8c/ne1hasuYt9uZ0FJv4fLb48TkO79V5mdBK1Up7xqNkCAwEAAQ==
+2026-03-02 22:05:12.360 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - password: YCDESXE+9qIE4MIVxHB4bmWHzZNRLqZH5aBrxwbcNZvodKddGkpv8cYv/JMtU6XrYjJfNh7oqCydhBJGRgtpUg==
+2026-03-02 22:05:12.383 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests]: XiaolvshuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 22:05:12.387 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yating.xiaolvshu.auth.XiaolvshuAuthApplication for test class com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests
+2026-03-02 22:05:12.440 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 22:05:12.719 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, null, null, fdsfffds(String), null, null, null, null, null, null, null, 2026-03-02 22:05:12.402(Timestamp), 2026-03-02 22:05:12.402(Timestamp), null
+2026-03-02 22:05:12.813 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted from t_user where id = ?
+2026-03-02 22:05:12.833 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 1(Long)
+2026-03-02 22:05:12.858 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 0
+2026-03-02 22:05:12.869 [main] INFO  c.y.xiaolvshu.auth.XiaolvshuAuthApplicationTests - User: null
+2026-03-02 22:05:12.903 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2026-03-02 22:05:12.912 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2026-03-02 22:08:46.203 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Starting DruidTests using Java 17.0.18 with PID 38664 (started by 26076 in D:\GitHub\xiaolvshu\xiaolvshu-auth)
+2026-03-02 22:08:46.205 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - The following 1 profile is active: "dev"
+2026-03-02 22:08:48.530 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-03-02 22:08:49.049 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2026-03-02 22:08:49.431 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Started DruidTests in 3.784 seconds (process running for 4.827)
+2026-03-02 22:08:50.118 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - privateKey:MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAuUf6Y3qeht3HqAQANnsTXMCenHPsfRjyxnIsodULTFy6mFkhbuG8qvLtOf/HTvhh+5jdXYDTY5QdEARkLsBKsQIDAQABAkACAM1r//5WLzA6c0D01dUOYfM9C12izG9LK7QVk6idp1drqYn0/MJGwCPzkeEFdVQEdluV4pBQQwDuiXqKIaoZAiEAwZVOjEfqL0h+YhDfnre7ZzrIXevsdNtBUnAxoc8i26kCIQD1BWeLrGvnGvoX6yXQ8VFfNinUESmXi931riRqr98byQIhAKw36GlkkTL/i3AzEr5hNpff8+GawgI0DSkKJx2M6bYBAiAJV8pp/gojRtkQfmvzuq/ypHsV1g2y9KdjDd/fnZMxWQIgWx8r8mnMqxo2beE2rehqc1+J/K7tgUi9sDnfR7vNkHs=
+2026-03-02 22:08:50.119 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - publicKey:MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALlH+mN6nobdx6gEADZ7E1zAnpxz7H0Y8sZyLKHVC0xcuphZIW7hvKry7Tn/x074YfuY3V2A02OUHRAEZC7ASrECAwEAAQ==
+2026-03-02 22:08:50.154 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - password: KU28SQ+Cno60Z3H03y7xwTKdCrToGLFwr4Q+zskurwGoIYZ8sd2n5tpTz/qGtvWv7T8WQ7t0ZbkE5K/ABu/waw==
+2026-03-02 22:08:50.180 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests]: XiaolvshuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 22:08:50.182 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yating.xiaolvshu.auth.XiaolvshuAuthApplication for test class com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests
+2026-03-02 22:08:50.230 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 22:08:50.498 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 10001(String), null, fdsfffds(String), null, null, null, null, null, null, null, 2026-03-02 22:08:50.199(Timestamp), 2026-03-02 22:08:50.199(Timestamp), null
+2026-03-02 22:08:50.602 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted from t_user where id = ?
+2026-03-02 22:08:50.626 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 1(Long)
+2026-03-02 22:08:50.648 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 0
+2026-03-02 22:08:50.658 [main] INFO  c.y.xiaolvshu.auth.XiaolvshuAuthApplicationTests - User: null
+2026-03-02 22:08:50.685 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2026-03-02 22:08:50.694 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2026-03-02 22:08:51.970 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Starting DruidTests using Java 17.0.18 with PID 38088 (started by 26076 in D:\GitHub\xiaolvshu\xiaolvshu-auth)
+2026-03-02 22:08:51.972 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - The following 1 profile is active: "dev"
+2026-03-02 22:08:53.579 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-03-02 22:08:54.038 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2026-03-02 22:08:54.392 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Started DruidTests in 2.984 seconds (process running for 4.018)
+2026-03-02 22:08:55.073 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - privateKey:MIIBVQIBADANBgkqhkiG9w0BAQEFAASCAT8wggE7AgEAAkEAvAVnmi/GD92LC1G+t6/iimlmSD42TUzeyrBRCSVdrMbxgrAwASMewNbjgkEp1xAK/BFmw9yI9TBdg47VoTW5hQIDAQABAkABAdFd8wXIMn3jNUN59ZZn8VC7wLMJUS7Uwxp9yyk4xWQyKRiJSvsMRveO5FWf321LjvzdtIA5KsAZs92FoaPZAiEA3KQyuYxhGSYMb9+pYCsMdU1uVDLTjLRAJyzQapUqTmsCIQDaJvYDU5BYXTKBg1b3KuVmc9G0xN6hy+xsyNvUiWMzzwIgINQRdAgN/mbp3M9jbRqanO1rZ/2z+jBrhyikzebpx4cCIQDL01VO3FfkyAc1jTLHM5Qs+o/4V20wPSmEptMGrOs8bwIhAK35xNE+sQK/viRI6AEsRk9g0T0OorYBIJRa6GwrUMWw
+2026-03-02 22:08:55.075 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - publicKey:MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALwFZ5ovxg/diwtRvrev4oppZkg+Nk1M3sqwUQklXazG8YKwMAEjHsDW44JBKdcQCvwRZsPciPUwXYOO1aE1uYUCAwEAAQ==
+2026-03-02 22:08:55.099 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - password: eylz90EeLdp3wLW4gicva2Y2E9KB1U0/4d0xXhKC/08HXg42RQsLVbKwm65qJGy3jnUDwhJW4YLsLJJcKJv3Kw==
+2026-03-02 22:08:55.137 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests]: XiaolvshuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 22:08:55.140 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yating.xiaolvshu.auth.XiaolvshuAuthApplication for test class com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests
+2026-03-02 22:08:55.211 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 22:08:55.453 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 10001(String), null, fdsfffds(String), null, null, null, null, null, null, null, 2026-03-02 22:08:55.174(Timestamp), 2026-03-02 22:08:55.174(Timestamp), null
+2026-03-02 22:08:55.564 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted from t_user where id = ?
+2026-03-02 22:08:55.584 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 1(Long)
+2026-03-02 22:08:55.610 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 0
+2026-03-02 22:08:55.623 [main] INFO  c.y.xiaolvshu.auth.XiaolvshuAuthApplicationTests - User: null
+2026-03-02 22:08:55.653 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2026-03-02 22:08:55.660 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2026-03-02 22:09:17.827 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Starting DruidTests using Java 17.0.18 with PID 32816 (started by 26076 in D:\GitHub\xiaolvshu\xiaolvshu-auth)
+2026-03-02 22:09:17.829 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - The following 1 profile is active: "dev"
+2026-03-02 22:09:19.802 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-03-02 22:09:20.335 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2026-03-02 22:09:20.755 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Started DruidTests in 3.435 seconds (process running for 4.434)
+2026-03-02 22:09:21.496 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - privateKey:MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAi/AXlT+zkkA5lSKKIa4aONI+eybVyjIXs/LCc86akLdEN8cgvdsPmYU3k/aUF4KI9eNrxFC+OYenM/kZB3dPDQIDAQABAkAIcyClazGHXvfrJKkFFBtyu2U47/UgTqqGO94Yeoz0OHnbHhWe7Q4h4XzuXVYZLpwlxS09WVoabOb63axZPgARAiEAvnhh/i569G/auR6k9DZcBrd+TV6xm3bnDepNBoXNjbECIQC8FRUpOPwfLYHhRIpYWIZgUiMiBJxn2VFG7zlDd5jiHQIhAJ+ZeesmAWs/KtSBhBEKV7RdHx0vor01NcioMqCrj6ERAh8DrGW9aF+EPF9NBwmssA3v06rb/zsOzC/KMuHrb2qNAiEAvHge48xN+JxEhrF43aLIaWDUsSjN9iqYhL02+L0y/8c=
+2026-03-02 22:09:21.500 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - publicKey:MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIvwF5U/s5JAOZUiiiGuGjjSPnsm1coyF7PywnPOmpC3RDfHIL3bD5mFN5P2lBeCiPXja8RQvjmHpzP5GQd3Tw0CAwEAAQ==
+2026-03-02 22:09:21.579 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - password: bD1Jba+5W+8pdNoeYAAEIhChs71Ob4BWGuC/3QaoId+TB8ZBAmRc+aiI4/uZo9pDqXK5koOamQ+TeCVZkrA49w==
+2026-03-02 22:09:21.625 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests]: XiaolvshuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 22:09:21.631 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yating.xiaolvshu.auth.XiaolvshuAuthApplication for test class com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests
+2026-03-02 22:09:21.714 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 22:09:22.021 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 10001(String), null, fdsfffds(String), null, null, null, null, null, null, null, 2026-03-02 22:09:21.674(Timestamp), 2026-03-02 22:09:21.674(Timestamp), null
+2026-03-02 22:09:22.116 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted from t_user where id = ?
+2026-03-02 22:09:22.133 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 1(Long)
+2026-03-02 22:09:22.157 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 0
+2026-03-02 22:09:22.168 [main] INFO  c.y.xiaolvshu.auth.XiaolvshuAuthApplicationTests - User: null
+2026-03-02 22:09:22.217 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2026-03-02 22:09:22.225 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2026-03-02 22:09:25.544 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Starting DruidTests using Java 17.0.18 with PID 20320 (started by 26076 in D:\GitHub\xiaolvshu\xiaolvshu-auth)
+2026-03-02 22:09:25.546 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - The following 1 profile is active: "dev"
+2026-03-02 22:09:27.082 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-03-02 22:09:27.594 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2026-03-02 22:09:28.027 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Started DruidTests in 2.954 seconds (process running for 3.968)
+2026-03-02 22:09:28.748 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - privateKey:MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAlGM03XKGkr08jzz/3h9lKxC/nFy09rlGpOmOuC80S6S4K6uehIQ6URx2I2FaxQdejdHiGSmU3Ga2kdDvwFgfWwIDAQABAkAKImxt43CFfR8xuTzQctx6AH7Vsw84+pZ0lO8GbVLpB4+ET9d87oAZcTFElqNVTw5NYnVpA2GUr+Yun5RAmzLhAiEAl492B5+1XIlKIBxcuw9nJ72JauvzfEmj1/iNjboYJQ0CIQD6pAY+iskWhSyMJTjKCTiZ2SlrxJ2VQIvMnCL2CByMBwIgApSy0dZqZDUCSiGxgo30l7ymhmeWMdufKqJU5sDwgFECIQDfrL191vE5zcNBln4lnzEJ60kRybcv2RhpkvWIRxjixQIgVVTDN38pdx3BFjd3kYVzXNHA/qkwbhuzKfgEZL+eaXA=
+2026-03-02 22:09:28.753 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - publicKey:MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJRjNN1yhpK9PI88/94fZSsQv5xctPa5RqTpjrgvNEukuCurnoSEOlEcdiNhWsUHXo3R4hkplNxmtpHQ78BYH1sCAwEAAQ==
+2026-03-02 22:09:28.785 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - password: JShRAoGtzyn9+x3dKnqk8uk/uHKCtHRFkiAbulQwOlQyGFwPMD9TdND1wMT4rt5gtP/XU/TUy7KA25FYPcwlOQ==
+2026-03-02 22:09:28.817 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests]: XiaolvshuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 22:09:28.819 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yating.xiaolvshu.auth.XiaolvshuAuthApplication for test class com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests
+2026-03-02 22:09:28.880 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 22:09:29.158 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 10001(String), null, fdsfffds(String), null, null, null, null, null, null, null, 2026-03-02 22:09:28.843(Timestamp), 2026-03-02 22:09:28.843(Timestamp), null
+2026-03-02 22:09:29.267 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted from t_user where id = ?
+2026-03-02 22:09:29.291 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 1(Long)
+2026-03-02 22:09:29.314 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 0
+2026-03-02 22:09:29.327 [main] INFO  c.y.xiaolvshu.auth.XiaolvshuAuthApplicationTests - User: null
+2026-03-02 22:09:29.365 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2026-03-02 22:09:29.374 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2026-03-02 22:12:59.219 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Starting DruidTests using Java 17.0.18 with PID 42940 (started by 26076 in D:\GitHub\xiaolvshu\xiaolvshu-auth)
+2026-03-02 22:12:59.221 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - The following 1 profile is active: "dev"
+2026-03-02 22:13:00.931 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-03-02 22:13:01.399 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2026-03-02 22:13:01.901 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - Started DruidTests in 3.262 seconds (process running for 4.261)
+2026-03-02 22:13:02.592 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - privateKey:MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAgBSO+GRI8AM2CYVoUZpo22azqptZHMskTCPpNlCglbPVvZVa8JfFr5F1KnNT2lvpWXdRmvXgRMCJ720McmqYAwIDAQABAkAc9Mjn5kBJJuiyGVuey1J2e88VvJ5WcKTJo/rHIU5U2awSFToYcQpqOFJyN5vF/xetYPoYs43WjW9/iAPqYdrRAiEAtbcF5Tg5KWynaHsMzLVUbRAeEe3zVLUm6lF4LGPUvFECIQC0cIV8whGfOFYEYePqLjb/QSf7GKHZE7Y8LII8g3U+EwIgd2PX8MGe9POZjlECmOEupjWnvBn9/RLEjcGXVnsFA/ECICOXWk08fntYgmcE5A7qJMD+miNGPY5y++wsn1fOWk7vAiEAqPy6aQiLsTMwcarzNxvPFhiA00M4b9azz0OalRddZ7o=
+2026-03-02 22:13:02.593 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - publicKey:MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIAUjvhkSPADNgmFaFGaaNtms6qbWRzLJEwj6TZQoJWz1b2VWvCXxa+RdSpzU9pb6Vl3UZr14ETAie9tDHJqmAMCAwEAAQ==
+2026-03-02 22:13:02.621 [main] INFO  com.yating.xiaolvshu.auth.DruidTests - password: e2rDnE7jPzOyI482fmhmwOT3arNztGkWGrLMnZ43Du9HBgEQFdatipaQS3BSxdBAIAz1DZLBeOgt0YifK6p+0A==
+2026-03-02 22:13:02.655 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests]: XiaolvshuAuthApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 22:13:02.658 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yating.xiaolvshu.auth.XiaolvshuAuthApplication for test class com.yating.xiaolvshu.auth.XiaolvshuAuthApplicationTests
+2026-03-02 22:13:02.726 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==>  Preparing: insert into t_user (id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 22:13:03.023 [main] DEBUG c.y.x.auth.domain.mapper.UserDOMapper.insert - ==> Parameters: null, 2324322(String), 123456(String), 测试用户(String), null, null, null, 13800000000(String), null, null, null, 2026-03-02 22:13:02.685(Timestamp), 2026-03-02 22:13:02.685(Timestamp), null
+2026-03-02 22:13:03.134 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==>  Preparing: select id, xiaolvshu_id, `password`, nickname, avatar, birthday, background_img, phone, sex, `status`, introduction, create_time, update_time, is_deleted from t_user where id = ?
+2026-03-02 22:13:03.150 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - ==> Parameters: 1(Long)
+2026-03-02 22:13:03.167 [main] DEBUG c.y.x.a.d.mapper.UserDOMapper.selectByPrimaryKey - <==      Total: 0
+2026-03-02 22:13:03.177 [main] INFO  c.y.xiaolvshu.auth.XiaolvshuAuthApplicationTests - User: null
+2026-03-02 22:13:03.197 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2026-03-02 22:13:03.206 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
