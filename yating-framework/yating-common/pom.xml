@@ -16,6 +16,16 @@
 
 
     <dependencies>
+        <!-- 入参校验 -->
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+
         <!-- 避免编写那些冗余的 Java 样板式代码，如 get、set 方法等 -->
         <dependency>
             <groupId>org.projectlombok</groupId>

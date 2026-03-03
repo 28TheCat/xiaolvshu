@@ -27,11 +27,15 @@ class XiaolvshuAuthApplicationTests {
     void testInsert(){
 
         UserDO userDO = new UserDO();
-        userDO.setNickname("fdsfffds");
+        userDO.setXiaolvshuId("2324322");
+        userDO.setPhone("13800000000");
+        userDO.setNickname("测试用户");
+        userDO.setPassword("123456");
         userDO.setCreateTime(new Date());
         userDO.setUpdateTime(new Date());
-
+        userDO.setStatus((byte) 0);
         userDOMapper.insert(userDO);
+
     }
 
 
