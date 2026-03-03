@@ -22,25 +22,37 @@ import java.util.Optional;
 @ControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
+
     /**
      * 捕获自定义业务异常
      * @return
      */
     @ExceptionHandler({ BizException.class })
     @ResponseBody
-    public Response<Object> handleMethodArgumentNotValidException(HttpServletRequest request, MethodArgumentNotValidException e){
-        //参数错误异常码
+    public Response<Object> handleBizException(HttpServletRequest request, BizException e) {
+        log.warn("{} request fail, errorCode: {}, errorMessage: {}", request.getRequestURI(), e.getErrorCode(), e.getErrorMessage());
+        return Response.fail(e);
+    }
+
+    /**
+     * 捕获参数校验异常
+     * @return
+     */
+    @ExceptionHandler({ MethodArgumentNotValidException.class })
+    @ResponseBody
+    public Response<Object> handleMethodArgumentNotValidException(HttpServletRequest request, MethodArgumentNotValidException e) {
+        // 参数错误异常码
         String errorCode = ResponseCodeEnum.PARAM_NOT_VALID.getErrorCode();
 
-        //获取BindingResult
-        BindingResult bindingResult= e.getBindingResult();
+        // 获取 BindingResult
+        BindingResult bindingResult = e.getBindingResult();
 
-        StringBuilder message=new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
-        //获取检验不通过的字段，组合错误信息，格式为：emali邮箱格式不正确，当前值为aaagamil.com
+        // 获取校验不通过的字段，并组合错误信息，格式为： email 邮箱格式不正确, 当前值: '123124qq.com';
         Optional.ofNullable(bindingResult.getFieldErrors()).ifPresent(errors -> {
             errors.forEach(error ->
-                    message.append(error.getField())
+                    sb.append(error.getField())
                             .append(" ")
                             .append(error.getDefaultMessage())
                             .append(", 当前值: '")
@@ -51,7 +63,7 @@ public class GlobalExceptionHandler {
         });
 
         // 错误信息
-        String errorMessage = message.toString();
+        String errorMessage = sb.toString();
 
         log.warn("{} request error, errorCode: {}, errorMessage: {}", request.getRequestURI(), errorCode, errorMessage);
 
