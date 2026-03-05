@@ -1,5 +1,7 @@
-com\yating\framework\common\constant\DateConstants.class
+com\yating\framework\common\validator\PhoneNumber.class
 com\yating\framework\common\exception\BaseExceptionInterface.class
+com\yating\framework\common\validator\PhoneNumberValidator.class
 com\yating\framework\common\exception\BizException.class
-com\yating\framework\common\response\Response.class
 com\yating\framework\common\util\JsonUtils.class
+com\yating\framework\common\constant\DateConstants.class
+com\yating\framework\common\response\Response.class

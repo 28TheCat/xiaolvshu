@@ -1,5 +1,7 @@
 package com.yating.xiaolvshu.auth.service.impl;
 
+import cn.dev33.satoken.stp.SaTokenInfo;
+import cn.dev33.satoken.stp.StpUtil;
 import com.google.common.collect.Lists;
 import com.yating.framework.common.exception.BizException;
 import com.yating.framework.common.response.Response;
@@ -23,6 +25,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.TransactionTemplate;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -44,8 +47,8 @@ public class UserServiceImpl implements UserService {
     private RedisTemplate<String, Object> redisTemplate;
     @Resource
     private UserRoleDOMapper userRoleDOMapper;
-
-
+    @Resource
+    private TransactionTemplate transactionTemplate;
     /**
      * 登录与注册
      *
@@ -103,10 +106,15 @@ public class UserServiceImpl implements UserService {
                 break;
         }
 
-        // SaToken 登录用户，并返回 token 令牌
-        // todo
+        // SaToken 登录用户, 入参为用户 ID
+        StpUtil.login(userId);
 
-        return Response.success("");
+        // 获取 Token 令牌
+        SaTokenInfo tokenInfo = StpUtil.getTokenInfo();
+
+        // 返回 Token 令牌
+        return Response.success(tokenInfo.tokenValue);
+
     }
 
     /**
@@ -121,7 +129,7 @@ public class UserServiceImpl implements UserService {
 
         UserDO userDO = UserDO.builder()
                 .phone(phone)
-                .xiaohlvhuId(String.valueOf(xiaolvshuId)) // 自动生成小红书号 ID
+                .xiaolvshuId(String.valueOf(xiaolvshuId)) // 自动生成小红书号 ID
                 .nickname("小红薯" + xiaolvshuId) // 自动生成昵称, 如：小红薯10000
                 .status(StatusEnum.ENABLE.getValue()) // 状态为启用
                 .createTime(LocalDateTime.now())
