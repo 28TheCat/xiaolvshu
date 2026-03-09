@@ -1,6 +1,9 @@
 package com.yating.xiaolvshu.auth.domain.mapper;
 
 import com.yating.xiaolvshu.auth.domain.dataobject.RolePermissionDO;
+import io.lettuce.core.dynamic.annotation.Param;
+
+import java.util.List;
 
 public interface RolePermissionDOMapper {
     int deleteByPrimaryKey(Long id);
@@ -14,4 +17,12 @@ public interface RolePermissionDOMapper {
     int updateByPrimaryKeySelective(RolePermissionDO record);
 
     int updateByPrimaryKey(RolePermissionDO record);
+    /**
+     * 根据角色 ID 集合批量查询
+     *
+     * @param roleIds
+     * @return
+     */
+    List<RolePermissionDO> selectByRoleIds(@Param("roleIds") List<Long> roleIds);
+
 }

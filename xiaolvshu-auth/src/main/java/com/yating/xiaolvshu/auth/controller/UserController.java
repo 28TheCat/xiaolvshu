@@ -2,15 +2,14 @@ package com.yating.xiaolvshu.auth.controller;
 
 import com.yating.framework.biz.operationlog.aspect.ApiOperationLog;
 import com.yating.framework.common.response.Response;
+import com.yating.xiaolvshu.auth.enums.ResponseCodeEnum;
 import com.yating.xiaolvshu.auth.model.vo.user.UserLoginReqVO;
 import com.yating.xiaolvshu.auth.service.UserService;
 import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Author: yating
@@ -31,6 +30,7 @@ public class UserController {
     public Response<String> loginAndRegister(@Validated @RequestBody UserLoginReqVO userLoginReqVO) {
         return userService.loginAndRegister(userLoginReqVO);
     }
+
 
 }
 

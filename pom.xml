@@ -23,6 +23,9 @@
     <!-- 认证服务 -->
     <module>xiaolvshu-auth</module>
     <module>yating-framework</module>
+    <module>xiaolvshu-gateway</module>
+    <module>xiaolvshu-oss</module>
+    <module>xiaolvshu-oss/xiaolvshu-oss-api</module>
   </modules>
 
   <properties>
@@ -52,7 +55,9 @@
     <sa-token.version>1.38.0</sa-token.version>
     <guava.version>33.0.0-jre</guava.version>
     <hutool.version>5.8.26</hutool.version>
+    <dysmsapi.version>4.5.0</dysmsapi.version>
     <commons-lang3.version>3.12.0</commons-lang3.version>
+    <nacos-config.version>0.3.0-RC</nacos-config.version>
   </properties>
 
 
@@ -83,6 +88,16 @@
         <version>${spring-boot.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-bootstrap</artifactId>
       </dependency>
 
       <!-- 相关工具类 -->

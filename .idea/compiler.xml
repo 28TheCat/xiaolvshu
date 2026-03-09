@@ -16,11 +16,17 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
         <module name="yating-spring-boot-starter-biz-operationlog" />
+        <module name="xiaolvshu-oss-api" />
         <module name="yating-spring-boot-starter-jackson" />
-        <module name="xiaolvshu-auth" />
         <module name="yating-common" />
+        <module name="xiaolvshu-oss" />
+        <module name="xiaolvshu-auth" />
+        <module name="xiaolvshu-gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xiaolvshu-oss-biz" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
